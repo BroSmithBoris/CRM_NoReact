@@ -1,0 +1,24 @@
+﻿services:
+  crm_noreact:
+    image: crm_noreact
+    build:
+      context: .
+      dockerfile: CRM_NoReact/Dockerfile
+
+  crm.api:
+    image: crm.api
+    build:
+      context: .
+      dockerfile: CRM.API/Dockerfile
+
+  crm.ui:
+    image: crm.ui
+    build:
+      context: .
+      dockerfile: CRM.UI/Dockerfile
+
+  crm.api-1:
+    image: crm.api-1
+    build:
+      context: .
+      dockerfile: CRM.API/Dockerfile

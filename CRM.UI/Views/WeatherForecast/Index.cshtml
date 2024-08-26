@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Weather Forecast";
+}
+
+<table id="main-table" class="table table-hover">
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>TemperatureC</th>
+        <th>TemperatureF</th>
+        <th>Summary</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section Styles {
+    <link href="https://cdn.datatables.net/v/bs4/dt-2.1.4/datatables.min.css" rel="stylesheet">
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/v/bs4/dt-2.1.4/datatables.min.js"></script>
+    
+    <script>
+        const $mainTable = $("#main-table");
+        window.dataTable = $mainTable.DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/2.1.4/i18n/ru.json"
+            },
+            "ajax": {
+                "type": "GET",
+                "url": `https://localhost:5001/api/WeatherForecast`,
+                "contentType": "application/json",
+                "dataSrc": ""
+            },
+            "columns": [
+                { "data": "date" },
+                { "data": "temperatureC" },
+                { "data": "temperatureF" },
+                { "data": "summary" },
+            ]
+        });
+    </script>
+}

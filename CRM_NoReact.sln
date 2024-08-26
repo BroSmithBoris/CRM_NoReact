@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07319486-4195-41D3-B2B8-5AADC6321B80}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.Data", "CRM.Data\CRM.Data.csproj", "{6364153D-EB78-4E71-9567-B1DFB37657AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.UI", "CRM.UI\CRM.UI.csproj", "{71ED3C18-BE3F-409A-8DB3-866EB4D06011}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRM.API", "CRM.API\CRM.API.csproj", "{C67B1501-C6BB-40B2-BDE5-8304181AD6AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6364153D-EB78-4E71-9567-B1DFB37657AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6364153D-EB78-4E71-9567-B1DFB37657AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6364153D-EB78-4E71-9567-B1DFB37657AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6364153D-EB78-4E71-9567-B1DFB37657AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71ED3C18-BE3F-409A-8DB3-866EB4D06011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71ED3C18-BE3F-409A-8DB3-866EB4D06011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71ED3C18-BE3F-409A-8DB3-866EB4D06011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71ED3C18-BE3F-409A-8DB3-866EB4D06011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67B1501-C6BB-40B2-BDE5-8304181AD6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67B1501-C6BB-40B2-BDE5-8304181AD6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67B1501-C6BB-40B2-BDE5-8304181AD6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67B1501-C6BB-40B2-BDE5-8304181AD6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
